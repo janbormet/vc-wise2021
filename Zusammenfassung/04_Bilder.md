@@ -81,13 +81,106 @@
     - $H(\omega) = 1$ für $|\omega| \geq \omega_1$
     - Abschneiden der tiefen Frequenzen $|\omega| < \omega_1$. Es können nur hohe Frequenzen passieren. 
     - Scharfe Übergänge werden deutlicher
+    - Ideraler Hochpaß:
+      - Abschneiden tiefer Frequenzen $< D_0$
+      - radial symmetrisch zum Ursprung
+      - physikalisch nicht realisierbar
+      - Approximation: Mexican Hat
   - Tiefpaß
     - $H(\omega) = 1$ für $|\omega| < \omega_1$
     - $H(\omega) = 0$ für $|\omega| \geq \omega_1$
     - Abschneiden der hohen Frequenzen $|\omega| > \omega_1$. Es können nur tiefe Frequenzen passieren. 
     - Rauschen wird eliminiert. Bild generell etwas unschärfer (blur)
+    - Idealer Tiefpaß:
+      - Abschneidern hoher Frequenzen $> D_0$
+      - radial symmetrisch zum Ursprung
+      - physikalisch nicht realisierbar (FT einer Rechteckfunktion?)
+      - Annäherung: Gauss'scher Tiefpaß, denn FT einer Gauss Glocke ist wieder Gauss Glocke
+      - macht auch Sinn wegen blur (gauss filter)
+![Ortsraum Hochpaß und Tiefpaß](Bilder_04_Bilder/Auswahl_008.png)
   - Bandpaß Filert
     - $H(\omega) = 0$ für $|\omega| \leq \omega_1$
     - $H(\omega) = 1$ für $\omega_1 < |\omega| < \omega_2$
     - $H(\omega) = 0$ für $|\omega| \geq \omega_2$
     - Nur Frequenzen aus dem Band können passieren
+
+
+
+## Frequenzraum Filter vs. Ortsraum Filter
+- \+ schnelleBerechnung (FFT)
+- \+ einfache Handhabung/Filterdesign
+- \- Approx der Spezifikatiopn aus Frequenzraum. (keine unendlich breiten Filter im Ortsraum -> Artefakte)
+
+## Bildkompression
+- Verlustlose Kompression
+  - Variable Length Coding
+    - Huffman Code
+    - Arithmetischer Code
+  - Bit-Plane Coding
+    - Bit-Plane Slicing / Run-Length Coding
+  - Predictive Coding
+  - Lempel-Ziv_welch-Algorithmus (LZW)
+  - GIF, TIFF
+- Verlustbehaftete Kompression
+  - nicht alle Eigenschaften Berücksichtigen
+  - exakte Rekonstruktion ggf. unmöglich
+  - Qualität vs. Kompressionsgrad
+  - verwendet häufig Modelle der menschlichen Wahrnehmung
+- Hamonische Transformation
+  - Zerlegung der Daten in verschiedene Frequenzteile
+    - FT
+    - Wavelet Transformation
+  - typischer Vertreter JPEG
+- JPEG
+  - Verlustrei oder Verlustbehaftet
+  - Verlustbehaftete:
+    - für fotographische Aufnahmen mit fließenden Farbübergängen optimiert
+    - weniger geeignet für Bilddaten mit harten Kontrasten
+- JPEG Baseline Codec:
+  - 1. Umwandlung in $YC_RC_B$ Farbraum
+  - 2. Farb-Subsampling
+    - verlustbehaftete Komprimierung der Farbrepräsentation
+    - Grundlage: Höhere Genauigkeit der menschlichen Ortsauflösung im Helligkeitsbereich (Grünbereich) als im Farbbereich
+    - Für kleines Gebiet 2x2 $C_r$ und $C_b$ Werte mitteln und zusammenfassen
+  - 3. DCT
+    - Discrete Cosine Transform (Fourierreihe mit nur Realteil)
+      - Vorteil: Wenn Bild keine Scharfen Kanten hat
+    - Rasterisierung in 8x8 Bildblöcke
+    - DCT auf Blöcke
+    - Ergebnis als Vektoren interpretieren
+  - 4. Quantisierung
+    - Division der DCT Koeffizienten durch Quantisierungsmatrix
+      - Betonung homogener Regionen
+      - Isotrope Abstand von DC
+    - Beseitigung von Infroamtionsanteilen, die Mensch nicht oder schlecht wahrnimmt
+  - 5. Kodierung der Koeffizienten
+    - 8x8 Blöcke werden zu sequenziellem, 1D Bitstream
+    - DC Koeffizienten werden als Differrenz zum vorhergehenden Koeff kodiert
+    - In Zickzackkurve als reihenfolge (günstige Reihenfolge wegen kleinen Werten für weitere Kompression)
+  - Tatsächlich komprimieren
+    - Huffman
+    - arithmetische Codes
+      - besser als Huffman, aber Patente
+
+## Komprimieren Übersicht
+- Audio
+  - nicht komprimiert
+    - AIFF, WAV
+  - verlustlos
+    - MPEG-4-ALC, Aplle Lossless (ALAC), WMA Lossless
+  - mit Verlust
+    - MP3, Ogg Vorbis, MPEG-Audio, AAC(iTunes), WMA
+- Bilder
+  - nicht komprimiert
+    - BMP, RAW
+  - verlustlos
+    - TIFF, GIF, PNG, (VI JPEG/-2000)
+  - mit Verlust
+    - JPEG (DCT), JPEG2000 (Wavelets)
+- Video
+  - nicht komprimiert
+    - nicht optimal!
+  - verlustlos
+    - gibt es, aber still rip
+  - mit Verlust
+    - H.264, MPEG-4 part2, WMV
