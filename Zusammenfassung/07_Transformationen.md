@@ -134,4 +134,9 @@ $\begin{pmatrix}x' \\ y' \\ z' \\ 1\end{pmatrix} = \begin{pmatrix}a_{11} & a_{12
       - virtuelle 3D Szene wird in 2D angezeigt
       - Mehrdeutigkeiten - unendlich viele Möglichkeiten die Cursorposition auf eine gerade in 3D abzubilden
       - noch schwerer, wenn 2D Cursor bewegt wird
+-3D Interaktion mit 3D Widgets
+  - hier ist ein Manipulator eine grafische Repräsentation einer Operation oder der Status eines Objekts, der zusammen mit dem Objekt selbst abgelegt wird
+  - Der Status bzw. Die Operation kann durch Klicken und Bewegen (Dragging) der grafischen Elemente (Handle) des  Manipulators kontrolliert werden
+  - Zeiger bleibt innerhalb der Szene
+  - Reduziert Mausbewegungen
 
