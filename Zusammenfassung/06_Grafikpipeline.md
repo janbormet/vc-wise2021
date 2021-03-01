@@ -2,6 +2,7 @@
 
 ## Hardware
 ![Hardware&Paradigmen](Bilder_06_Grafikpipeline/Auswahl_009.png)
+
 - Paradigmen
   - P1 Large-Scale Computing
     - Host und Terminal Systeme, Rechenzentren
@@ -53,7 +54,7 @@
   - Animation
 
 ## Grafikpipeline
-![Grafikpipeline](Bilder_06_Grafikpipeline/Auswahl_010.png)
+![Grafikpipeline](Bilder_06_Grafikpipeline/Auswahl_010.png) 
 - Anwendung
   - Eingabe grafischer Daten
   - Generierung von 3D-Modellen

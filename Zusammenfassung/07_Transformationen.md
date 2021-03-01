@@ -93,7 +93,7 @@ $\begin{pmatrix}x' \\ y' \\ z' \\ 1\end{pmatrix} = \begin{pmatrix}a_{11} & a_{12
     - Parallelen schneiden sich in Fluchtpunkten
     - Rechtecke werden auf Vierecke transformiert
   - sind also **keine affinen Abbildungen**
-  - $y_0 = y \cdot \frac{x_0}{x_0 + x}
+  - $y_0 = y \cdot \frac{x_0}{x_0 + x}$
   - $\begin{pmatrix} x \\y \end{pmatrix} \mapsto \begin{pmatrix} 0 \\ \frac{y \cdot x_0}{x_0 + x} \end{pmatrix}$
   - Es entsteht eine homogene 3x3 Matrix (**2D Geometrie"**) der perspektivischen Projektion, die sich in Parallelprojektion und perspektivische Transformation zerlegen lässt
   - $\frac{1}{x_0} \cdot \begin{pmatrix} x' \\y' \\ 1 \end{pmatrix} = \begin{pmatrix} 0 & 0 & 0 \\ 0 & 1 & 0 \\ \frac{1}{x_0} & 0 & 1 \end{pmatrix} \cdot \begin{pmatrix} x \\y \\1 \end{pmatrix}$
