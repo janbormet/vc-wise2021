@@ -41,7 +41,7 @@
   - $H(\xi) = F(\xi) \cdot G(\xi)$
 - Einer Faltung im Ortsraum entspricht eine Multiplikation imm Frequenzraum
 
-![Faltungen](/Bilder_03_Fourier/Auswahl_003.png)
+![Faltungen](Bilder_03_Fourier/Auswahl_003.png)
 
 ## Abtastung von Signalen
 - Wie kontinuierliche Funtionen abtasten um diskrete Funktionen zu erhalten?
@@ -54,7 +54,7 @@
 
 - Diskrete Abtastung
   - $\hat{f}(x) = f(x) \cdot \sum_{n=-\infty}^{\infty}\delta(x-n\Delta x)$
-- Fouriertransformierte $\hat{F}(u)$ entspricht $F(u)$ der nicht-abgetasteten Funtion $f(t)$, die aber periodisch mit der Periode $frac{1}{\Delta x}$ wiederholt und mit $\frac{1}{\Delta x}$ sklaiert wurde
+- Fouriertransformierte $\hat{F}(u)$ entspricht $F(u)$ der nicht-abgetasteten Funtion $f(t)$, die aber periodisch mit der Periode $\frac{1}{\Delta x}$ wiederholt und mit $\frac{1}{\Delta x}$ sklaiert wurde
 
 ## Abtasttheorie
 - Sei $f(x)$ bandbegrenzt durch $u_G$ d.h. $F(u) = 0$ für $|u| > u_G$

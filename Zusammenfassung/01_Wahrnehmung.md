@@ -53,7 +53,7 @@
   - 7 - 8 mio
   - vorallem in Fovea
   - 3 Typen (für Farbsehen)
-  - Macima bei 420 nm, 534 nm, 564 nm
+  - Maxima bei 420 nm, 534 nm, 564 nm
   - Farbsehen (photopisch)
   - S Rezeptoren - Blau (10%)
   - M - Grün (48%)
