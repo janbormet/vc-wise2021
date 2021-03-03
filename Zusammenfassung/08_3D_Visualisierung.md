@@ -110,7 +110,7 @@
 
 ## Direkte Volumenvisualisierung
 - indirekt
-  - Generierung einer Volumen 
+  - Generierung einer Volumen Metadarstellung
   - Komplexität hängt von der Anzahl der Polygone ab
 - direkt
   - Visualisierung ohne Generierung einer Metadarstellung
@@ -156,26 +156,3 @@
     - $tf_i: V \rightarrow O_i$
       - Definitionsbereich Voxelwerte und Wertebereich optische Eingenschaften
   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

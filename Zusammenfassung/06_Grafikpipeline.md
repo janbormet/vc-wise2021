@@ -97,8 +97,15 @@
   - Simulation der Beleuchtung in den Knoten
     - Beleuchtung des Primitivs
       - Flat Shading
+        - Normale des Primitivs ergibt einheitliche Helligkeit
       - Gouraud Shading
+        - Normale in Eckpunkten ergibt deren Helligkeitswerte
+        - lineare Interpolation der Helligkeiten der Eckpunkte
       - Phong Shading
+        - Eckpunkte Normalen für jeden Punkt linear interpoliert und normiert
+        - Helligkeitswert ergibt sich aus interpolierter Normale
+        - $I_{total} = I_{amb} + I_{diff} + I_{spec}$
+          - Ambiente Reflexion, Diffuse und Spiegelnde Reflektion
   - Perspektivische Transformation und Clipping
     - Sichtbarkeit
     - Sichtbar ist der dem Auge am nächsten liegende Punkt

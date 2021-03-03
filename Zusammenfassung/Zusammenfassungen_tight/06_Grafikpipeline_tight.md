@@ -1,4 +1,16 @@
 # Grafikpipeline
+
+## Virtual Reality
+- Virtual Reality
+  - nicht immersive Umgebungen
+    - Bildschirm und Zeigerbasiert
+    - 3D Anzeige, evtl. haptisches Feedback
+  - immersive Umgebungen
+    - Eindruck erwecken, tatsächlich in einer Welt aus virtuellen Objekten zu sein
+- Augmented Reality
+  - nahtlose Intergration zwischen realen und virtuellen Objekten
+
+## Grafikpipeline
 ![Grafikpipeline](../Bilder_06_Grafikpipeline/Auswahl_010.png) 
 - Anwendung
   - Eingabe grafischer Daten

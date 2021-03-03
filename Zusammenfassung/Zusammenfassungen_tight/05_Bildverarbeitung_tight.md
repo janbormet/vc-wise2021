@@ -21,7 +21,9 @@
 - keine Komplexen Werte mehr in Rekonstruktion
 - R intelligent wählen
   - zu groß -> Tiefpaß
-  - zu klein -> Hochpaß
+    - $A$ ist Tiefpaß. Bild wurde mit $A$ geblurrt. Beim inversen Anwenden von $A$ werden Kanten verwischt, Rauschen entfernt, grobe Strukturen behalten
+  - zu klein
+    - $A$ ist Hochpaß. Bild "wurde mit $A$ geblurrt". Beim "inversen" Anwenden von $A$ wird also ein inverser Hochpaß angewandt und Kanten/ grobe Strukturen werden entfernt, Verstärkt rauschen!
   - optimal -> Bandpaß
 - Nachteil
   - nur ein Filter für gesamtes Bild, ein Wert für R

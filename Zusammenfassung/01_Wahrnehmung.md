@@ -28,7 +28,7 @@
   - produziert neuro-physiologisches Signal
   - dann mentale Verarbeitung und Interpretation des Reizes (nicht objektiv)
 - technisch gesehen:
-  - monochromatisches (einfarbiges) Licht beschrieben durch Parameter $\lambda$ (Frequenz) und $v$ (Wellenlänge)
+  - monochromatisches (einfarbiges) Licht beschrieben durch Parameter $\lambda$ (Wellenlänge) und $v$ (Frequenz)
   - $v \cdot \lambda = c$
   - $c \approx 3 \cdot 10^8 m/s$
 ![Spektrum](Bilder_01_Wahrnehmung/Auswahl_001.png)

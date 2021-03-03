@@ -43,9 +43,11 @@
   - Hochpaß
     - tiefe Freq. abschneiden, scharfe Übergänge deutlicher
     - Mexican Hat
+    - Summe $0$ im Ortsraum, positive und negative Werte
   - Tiefpaß
     - hohe Frequenzen abschneiden, blur, weniger Rauschen
     - Gaussglocke
+    - Summe $1$ nur positive Werte
   - Bandpaß
 
 ## Kompression
