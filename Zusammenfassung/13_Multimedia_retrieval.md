@@ -83,4 +83,3 @@
 - wie suchen?
   - Funktionale Zusammenhänge der Daten mit FV beschrieben
   - Gruppierung anhand von FV Ähnlichkeit
-- 
