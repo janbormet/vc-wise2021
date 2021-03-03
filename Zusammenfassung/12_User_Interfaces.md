@@ -122,11 +122,11 @@
   - beinhaltet Fenster zu Fenster Verlauf
   - früher mühsamer Prozess
   - neue Sprachen erlauben einfache Entwicklung
-    - mit Visual Studi
+    - mit Visual Studio
       - C#
       - C++
       - Visual Basic
-    - mit NetBeans und JBilder
+    - mit NetBeans und JBuilder
       - Java
   - Eventhandler
     - reagieren auf Ereignisse die durch Aktionen innerhalb der GUI ausgelöst werden
