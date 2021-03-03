@@ -58,7 +58,7 @@
   - $x,y$ Chromacity Koordinaten einer additiven Mischung von Farbreizen liegen in der konvexen Hülle der Chromacity Koordinaten der Farbreize
   - Häufig benutzte Darstellung für Monitor Farbumfang
 - Limitierungen
-  - XIEXYZ ist nicht wahrnehmungsgleichabständig
+  - CIEXYZ ist nicht wahrnehmungsgleichabständig
   - modelliert nur die erste Phase des Farbsehens (Auge)
   - erlaubt keinen einfachen Zugriff auf Farbattribute
 
@@ -131,8 +131,8 @@
     - $\text{CIEXYZ} \xleftrightarrow[]{\text{Transformation}} \text{RGB}$
 - YCbCr
   - $Y =$ Luminanz
-  - $Cb =$ Blau-Gelb
-  - $Cr =$ Rot-Grün
+  - $C_b =$ Blau-Gelb
+  - $C_r =$ Rot-Grün
   - z.B. in JPEG
   - kein Bezug zum visuellen System
 - HSI (HSV, HSL)
