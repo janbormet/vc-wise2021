@@ -137,7 +137,7 @@
       - in Eventbasierter Programmierung wird Code als Reaktion auf eintretende Events ausgeführt
 
 ## 3D Interaktion
-- Problem der Mehrdeutigkeit
+- Problem der Mehrdeutigkeit (Ambiguity)
 - Rest in 07 Transformation
 
 
